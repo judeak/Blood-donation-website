@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Become A Donor With Us Now!</title>
+    <link rel="stylesheet" type="text/css" href="../css/Dn-style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul id="navigation">
+            <li><a href="../Index.html" class="btn active">Home</a></li>
+            <li><a href="DonateNow.html" class="btn">Donate Now</a></li>
+            <li><a href="aboutUs.html" class="btn">About Us</a></li>
+            <li><a href="contact-us.html" class="btn">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <div class="image-container">
+        <img src="../pictures/1.png" alt="A donor donating blood">
+    </div>
+    <div class="form-container">
+
+        <form method="post" action="/donor-process" id='myform' name='myform' >
+            <h2>Become A Donor With Us Now!</h2>
+            <div>
+                <label for="fname">Full Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your full name">
+            </div><br>
+
+            <div>
+                <label for="DOB">Date of Birth:</label>
+                <input type="date" id="DOB" name="DOB">
+            </div><br>
+            <div>
+                <label for="blood_group">Blood Type:</label>
+                <select id="blood_group" name="blood_group">
+                    <option value="select" disabled selected>Select your blood type</option>
+                    <option value="A+">A+</option>
+                    <option value="O+">O+</option>
+                    <option value="B+">B+</option>
+                    <option value="AB+">AB+</option>
+                    <option value="A-">A-</option>
+                    <option value="O-">O-</option>
+                    <option value="B-">B-</option>
+                    <option value="AB-">AB-</option>
+                </select>
+            </div><br>
+            <div>
+                <fieldset>
+                    <legend>Have you donated blood in the last 3 months?</legend>
+                    <input type="radio" id="donated_yes" name="donated_recently" value="yes">
+                    <label for="donated_yes">Yes</label>
+                    <input type="radio" id="donated_no" name="donated_recently" value="no">
+                    <label for="donated_no">No</label>
+                </fieldset>
+            </div><br>
+            <div>
+                <fieldset>
+                    <legend>Have you had any surgery in the past 12 months?</legend>
+                    <input type="radio" id="surgery_yes" name="surgery" value="yes">
+                    <label for="surgery_yes">Yes</label>
+                    <input type="radio" id="surgery_no" name="surgery" value="no">
+                    <label for="surgery_no">No</label>
+                </fieldset>
+            </div><br>
+            <div>
+                <fieldset>
+                    <legend>Are you currently on any medication?</legend>
+                    <input type="radio" id="medication_yes" name="medication" value="yes">
+                    <label for="medication_yes">Yes</label>
+                    <input type="radio" id="medication_no" name="medication" value="no">
+                    <label for="medication_no">No</label>
+                </fieldset>
+            </div><br>
+            <div>
+                <fieldset>
+                    <legend>Do you have any medical conditions?</legend>
+                    <input type="radio" id="medical_condition_yes" name="medical_condition" value="yes">
+                    <label for="medical_condition_yes">Yes</label>
+                    <input type="radio" id="medical_condition_no" name="medical_condition" value="no">
+                    <label for="medical_condition_no">No</label>
+                </fieldset>
+            </div><br>
+            <div>
+                <label for="medical_condition_details">If yes, please tell us about them:</label>
+                <textarea id="medical_condition_details" name="medical_condition_details" placeholder="Medical Conditions"></textarea>
+            </div><br>
+            <div>
+                <p id='msg'></p>
+                <input type="submit" value="Submit" id="sub">
+            </div>
+        </form>
+    </div>
+</main>
+<footer>
+    <div class="credit">Made with <span>❤</span> by Red-Heros </div>
+</footer>
+<script src="../javascript/Donate.js"></script>
+</body>
+</html>

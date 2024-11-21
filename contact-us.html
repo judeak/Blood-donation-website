@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>contact us</title>
+  <link rel="stylesheet" type="text/css" href="../css/cu-style.css">
+</head>
+<body>
+  <div class="container">
+<header>
+    <nav> 
+        
+    <ul id="navigation">
+      <li><a href="../Index.html" class="btn active">Home</a></li>
+      <li><a href="DonateNow.html" class="btn">Donate Now</a></li>
+      <li><a href="aboutUs.html" class="btn">About us</a></li>
+      <li><a href="contact-us.html" class="btn">Contact us</a></li>
+     
+    </ul>
+  </nav>
+
+</header>
+
+<div class="form">
+  <h1>Contact us</h1>
+<form method="post" action="/process" autocomplete="on" id='myform' name='myform' >
+  <div class ="fullname">
+
+    <input type=text size="15" placeholder="First name"  name="fname" id="fname">
+   
+ 
+   <input type=text size="15" placeholder="Last name"  name="lname" id="lname">
+  </div>
+
+ 
+  <div id='full-name'>
+    <label>Gender</label>
+        <input type="radio" name="Gender" value='female'>
+        <label>female</label>
+
+      <input type="radio" name="Gender" value='male'>
+     <label>male</label>
+     
+  </div><br>
+  
+    <div>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required >
+    </div><br>
+    <div>
+    <label>DOB:
+    <input type="date" id="DOB" name="dob">
+    </label>
+  </div><br>
+    <div>
+      <input type="email" placeholder="Email" name="email" required
+      pattern="[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+\.[a-zA-Z]+\.*[a-zA-Z]*"
+      id="email">
+    </div>
+
+     <div>
+        <label for ="language">Language:</label>
+        <select id="language" name="language">
+            <option value="select" >Select language</option>
+            <option value="English" selected>English</option>
+            <option value="Arabic" >Arabic</option>
+            <option value="French" >French</option>
+        </select>
+      </div><br>
+    
+    
+        <textarea rows="5" placeholder="write message" name="message" id="message"></textarea>
+     
+    
+     <div>
+      <p id='msg'></p>
+      <input type="submit" value="Send" class="send" formnovalidate>
+    </div>
+    
+  </form> 
+  </div>
+  <div class="image">
+  <img src="../pictures/cu.png" alt="blood donation">
+  </div>
+  <div class="credit">Made with <span >❤</span> by Red-Heros </div>
+</div>
+<script src="../javascript/contact.js"></script>
+</body>
+</html>
