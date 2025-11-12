@@ -34,19 +34,18 @@ Blood-Donation-Website/<br>
 ├── 📄 contact-us.html<br>
 │<br>
 ├── 📁 css/<br>
-│   ── index-style.css<br>
-│   ── dn-style.css<br>
-│   ── aboutus-style.css<br>
-│   ── cu-style.css<br>
+│   ├── index-style.css<br>
+│   ├── dn-style.css<br>
+│   ├── aboutus-style.css<br>
+│   └── cu-style.css<br>
 │<br>
 ├── 📁 js/<br>
-│   ── donate.js<br>
-│   ── contact.js<br>
+│   ├── donate.js<br>
+│   └── contact.js<br>
 │<br>
 ├── 📁 images/<br>
-│   ── donatingBlood.png<br>
-│   ── blood.png<br>
-│   ── contactUs.png<br>
+│   ├── donatingBlood.png<br>
+│   ├── blood.png<br>
+│   └── contactUs.png<br>
 │<br>
 └── 📄 README.md<br>
-
