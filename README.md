@@ -26,4 +26,27 @@ The website has four pages that share information about blood donation and allow
 ---
 
 ## 📂 Files in the Project
+Blood-Donation-Website/
+│
+├── 📄 index.html
+├── 📄 donate-now.html
+├── 📄 about-us.html
+├── 📄 contact-us.html
+│
+├── 📁 css/
+│   ├── index-style.css
+│   ├── dn-style.css
+│   ├── aboutus-style.css
+│   └── cu-style.css
+│
+├── 📁 js/
+│   ├── donate.js
+│   └── contact.js
+│
+├── 📁 images/
+│   ├── donatingBlood.png
+│   ├── blood.png
+│   └── contactUs.png
+│
+└── 📄 README.md
 
